@@ -8,7 +8,8 @@ int main() {
 
     // External Cloud Database Connection String (Supabase/Neon Pooler URL)
    // const char *conninfo = "postgresql://postgres.xyzproject:password@aws-0-ap-south-1.pooler.supabase.com:6543/postgres";
-    const char *conninfo = "postgresql://postgres:[Dhananjay@0908]@db.ylppiisvnjueyawrityq.supabase.co:5432/postgres";
+   // const char *conninfo = "postgresql://postgres:[Dhananjay@0908]@db.ylppiisvnjueyawrityq.supabase.co:5432/postgres";
+    const char *conninfo = "postgresql://postgres:0908]@db.ylppiisvnjueyawrityq.supabase.co:6543/postgres";
     PGconn *conn = PQconnectdb(conninfo);
 
     if (PQstatus(conn) != CONNECTION_OK) {
